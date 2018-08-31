@@ -1,0 +1,490 @@
+<!--
+  Generated template for the AddRoomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+    <ion-navbar >
+      <ion-title class= "headermaster">Create Program</ion-title>
+      <ion-buttons end>
+          <button (click)= "addSet()" ion-button icon-only>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <!-- <ion-toolbar color="lightblue">
+      
+        <ion-title>{{data.pname}}</ion-title>
+      </ion-toolbar> -->
+  
+  </ion-header>
+  
+  <!-- padding class="action-sheets-basic-page" class="grid-basic-page" -->
+  
+  <ion-content  >
+    
+
+      <form (ngSubmit)="addProgram()" >
+
+        
+          <ion-list class= "master" >
+
+              <!-- <ion-row>
+                  <ion-title >Program Name</ion-title>
+              </ion-row> -->
+
+              <ion-item>
+                  <ion-label stacked text-center class= "colorwhite">Program Name</ion-label>
+                  <ion-input class= "colorwhite" value="" type="text" [(ngModel)]="data.pname" name="pname" required="" text-center></ion-input>
+                </ion-item>
+              
+              <!-- <ion-row>
+            <ion-item no-padding  no-lines class= "colorwhite" >
+              
+              <ion-input type="text" [(ngModel)]="data.pname" name="pname" required="" text-center placeholder="   Program Name"></ion-input>
+            </ion-item>
+          </ion-row> -->
+      
+              <ion-grid  no-lines class="scrolling-wrapper-flexbox"   >
+      
+
+  <ion-row class ="colorwhite"  flex-wrap: nowrap >
+              
+      <ion-col  class ="damn" class="e"  > 
+              <strong text-center  >EXCERSISES</strong>
+      </ion-col>
+
+      <ion-col class ="damn"  class="c" no-padding    > 
+            <strong  text-center >SET 1</strong>
+    </ion-col>
+  
+    <ion-col class ="damn" class="c"  no-padding     > 
+            <strong text-center >SET 2</strong>
+    </ion-col>
+  
+    <ion-col class ="damn" class="c"  no-padding   > 
+        <strong  text-center >SET 3</strong>
+  </ion-col>
+  
+  <ion-col class ="damn" class="c"  no-padding     > 
+        <strong  text-center >SET 4</strong>
+  </ion-col>
+   
+  <ion-col  *ngIf="numOfSets>4" class ="damn" class="c" no-padding    > 
+      <strong  text-center >SET 5</strong>
+  </ion-col>
+    
+    </ion-row>
+
+    <ion-row  class ="colorwhite" flex-wrap: nowrap >
+              
+      <ion-col  class ="damn" class="e"    > 
+              <strong  text-center  ></strong>
+      </ion-col>
+
+      <ion-col class ="damn"  class="d" no-padding    > 
+            <strong  text-center >reps</strong>
+    </ion-col>
+  
+    <ion-col class ="damn" class="d"  no-padding     > 
+            <strong text-center >weight</strong>
+    </ion-col>
+  
+    <ion-col class ="damn"  class="d" no-padding    > 
+      <strong  text-center >reps</strong>
+    </ion-col>
+
+    <ion-col class ="damn" class="d"  no-padding     > 
+      <strong text-center >weight</strong>
+    </ion-col>
+  
+    <ion-col class ="damn"  class="d" no-padding    > 
+      <strong  text-center >reps</strong>
+    </ion-col>
+
+    <ion-col class ="damn" class="d"  no-padding     > 
+      <strong text-center >weight</strong>
+    </ion-col>
+
+    <ion-col class ="damn"  class="d" no-padding    > 
+      <strong  text-center >reps</strong>
+    </ion-col>
+
+    <ion-col class ="damn" class="d"  no-padding     > 
+      <strong text-center >weight</strong>
+    </ion-col>
+
+    <ion-col *ngIf="numOfSets>4" class ="damn"  class="d" no-padding    > 
+      <strong  text-center >reps</strong>
+    </ion-col>
+
+    <ion-col *ngIf="numOfSets>4" class ="damn" class="d"  no-padding     > 
+      <strong text-center >weight</strong>
+    </ion-col>
+    
+    </ion-row>
+
+       
+    <!-- First excersise -->
+
+    <ion-row  flex-wrap: nowrap >
+              
+        <ion-col class ="damn" class="a" > 
+            <ion-item no-padding class= "sticky"  >
+                <ion-input  text-center type="text" [(ngModel)]="data1.excersise" name="excersise1"  maxlength="22" placeholder="" required=""></ion-input>
+            </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+            <ion-item  no-padding class ="lepos"   >
+                <ion-input text-center type="text" [(ngModel)]="data1001.reps" name="reps1" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item> 
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item no-padding  class ="lepos"   >
+                <ion-input text-center type="number" [(ngModel)]="data2001.weig" name="weig1" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item   no-padding  class ="lepos"  >
+                <ion-input text-center type="number" [(ngModel)]="data1002.reps" name="reps2" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item  no-padding   class ="lepos" >
+                <ion-input text-center type="number" [(ngModel)]="data2002.weig" name="weig2" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item no-padding   class ="lepos"  >
+                <ion-input text-center type="number" [(ngModel)]="data1003.reps" name="reps3" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item  no-padding  class ="lepos"  >
+                <ion-input text-center type="number" [(ngModel)]="data2003.weig" name="weig3" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item  no-padding  class ="lepos"  >
+                <ion-input text-center type="number" [(ngModel)]="data1004.reps" name="reps4" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col class ="damn" class="b" > 
+                <ion-item no-padding class ="lepos" >
+                <ion-input text-center type="number" [(ngModel)]="data2004.weig" name="weig4" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+
+        <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                <ion-item  no-padding  class ="lepos">
+                <ion-input text-center type="number" [(ngModel)]="data1005.reps" name="reps5" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+
+        <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                <ion-item  no-padding  class ="lepos"  >
+                <ion-input text-center type="number" [(ngModel)]="data2005.weig" name="weig5" maxlength="3" required="" placeholder=""></ion-input>
+              </ion-item>
+        </ion-col>
+      
+      </ion-row>
+      <!-- First row -->
+      
+      <ion-row   *ngIf="numOfExcersises > 0" flex-wrap: nowrap >
+              
+              <ion-col class ="damn" class="a" > 
+                  <ion-item no-padding class= "sticky"  >
+                      <ion-input  text-center type="text" [(ngModel)]="data2.excersise" name="excersise2"  maxlength="22" placeholder="" required=""></ion-input>
+                  </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                  <ion-item  no-padding class ="lepos"   >
+                      <ion-input text-center type="text" [(ngModel)]="data1006.reps" name="reps6" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item> 
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item no-padding  class ="lepos"   >
+                      <ion-input text-center type="number" [(ngModel)]="data2006.weig" name="weig6" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item   no-padding  class ="lepos"  >
+                      <ion-input text-center type="number" [(ngModel)]="data1007.reps" name="reps7" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item  no-padding   class ="lepos" >
+                      <ion-input text-center type="number" [(ngModel)]="data2007.weig" name="weig7" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item no-padding   class ="lepos"  >
+                      <ion-input text-center type="number" [(ngModel)]="data1008.reps" name="reps8" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item  no-padding  class ="lepos"  >
+                      <ion-input text-center type="number" [(ngModel)]="data2008.weig" name="weig8" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item  no-padding  class ="lepos"  >
+                      <ion-input text-center type="number" [(ngModel)]="data1009.reps" name="reps9" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col class ="damn" class="b" > 
+                      <ion-item no-padding class ="lepos" >
+                      <ion-input text-center type="number" [(ngModel)]="data2009.weig" name="weig9" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+      
+              <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                      <ion-item  no-padding  class ="lepos">
+                      <ion-input text-center type="number" [(ngModel)]="data10010.reps" name="reps10" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+      
+              <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                      <ion-item  no-padding  class ="lepos"  >
+                      <ion-input text-center type="number" [(ngModel)]="data20010.weig" name="weig10" maxlength="3" required="" placeholder=""></ion-input>
+                    </ion-item>
+              </ion-col>
+            
+            </ion-row>
+
+    
+
+        <!-- Fifth Row -->
+      
+    
+    <ion-row   *ngIf="numOfExcersises > 1" flex-wrap: nowrap >
+              
+            <ion-col class ="damn" class="a" > 
+                <ion-item no-padding class= "sticky"  >
+                    <ion-input  text-center type="text" [(ngModel)]="data3.excersise" name="excersise3"  maxlength="22" placeholder="" required=""></ion-input>
+                </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                <ion-item  no-padding class ="lepos"   >
+                    <ion-input text-center type="text" [(ngModel)]="data10011.reps" name="reps11" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item> 
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item no-padding  class ="lepos"   >
+                    <ion-input text-center type="number" [(ngModel)]="data20011.weig" name="weig11" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item   no-padding  class ="lepos"  >
+                    <ion-input text-center type="number" [(ngModel)]="data10012.reps" name="reps12" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item  no-padding   class ="lepos" >
+                    <ion-input text-center type="number" [(ngModel)]="data20012.weig" name="weig12" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item no-padding   class ="lepos"  >
+                    <ion-input text-center type="number" [(ngModel)]="data10013.reps" name="reps13" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item  no-padding  class ="lepos"  >
+                    <ion-input text-center type="number" [(ngModel)]="data20013.weig" name="weig13" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item  no-padding  class ="lepos"  >
+                    <ion-input text-center type="number" [(ngModel)]="data10014.reps" name="reps14" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col class ="damn" class="b" > 
+                    <ion-item no-padding class ="lepos" >
+                    <ion-input text-center type="number" [(ngModel)]="data20014.weig" name="weig14" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+    
+            <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                    <ion-item  no-padding  class ="lepos">
+                    <ion-input text-center type="number" [(ngModel)]="data10015.reps" name="reps15" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+    
+            <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                    <ion-item  no-padding  class ="lepos"  >
+                    <ion-input text-center type="number" [(ngModel)]="data20015.weig" name="weig15" maxlength="3" required="" placeholder=""></ion-input>
+                  </ion-item>
+            </ion-col>
+          
+          </ion-row>
+
+  <!-- ROW -->
+
+  <ion-row   *ngIf="numOfExcersises > 2" flex-wrap: nowrap >
+              
+          <ion-col class ="damn" class="a" > 
+              <ion-item no-padding class= "sticky"  >
+                  <ion-input  text-center type="text" [(ngModel)]="data4.excersise" name="excersise4"  maxlength="20" placeholder="" required=""></ion-input>
+              </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+              <ion-item  no-padding class ="lepos"   >
+                  <ion-input text-center type="text" [(ngModel)]="data10016.reps" name="reps16" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item> 
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item no-padding  class ="lepos"   >
+                  <ion-input text-center type="number" [(ngModel)]="data20016.weig" name="weig16" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item   no-padding  class ="lepos"  >
+                  <ion-input text-center type="number" [(ngModel)]="data10017.reps" name="reps17" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item  no-padding   class ="lepos" >
+                  <ion-input text-center type="number" [(ngModel)]="data20017.weig" name="weig17" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item no-padding   class ="lepos"  >
+                  <ion-input text-center type="number" [(ngModel)]="data10018.reps" name="reps18" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item  no-padding  class ="lepos"  >
+                  <ion-input text-center type="number" [(ngModel)]="data20018.weig" name="weig18" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item  no-padding  class ="lepos"  >
+                  <ion-input text-center type="number" [(ngModel)]="data10019.reps" name="reps19" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col class ="damn" class="b" > 
+                  <ion-item no-padding class ="lepos" >
+                  <ion-input text-center type="number" [(ngModel)]="data20019.weig" name="weig19" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+  
+          <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                  <ion-item  no-padding  class ="lepos">
+                  <ion-input text-center type="number" [(ngModel)]="data10020.reps" name="reps20" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+  
+          <ion-col *ngIf="numOfSets>4" class ="damn" class="b" > 
+                  <ion-item  no-padding  class ="lepos"  >
+                  <ion-input text-center type="number" [(ngModel)]="data20020.weig" name="weig20" maxlength="3" required="" placeholder=""></ion-input>
+                </ion-item>
+          </ion-col>
+        
+        </ion-row>
+
+    
+    <!-- ROW -->
+            </ion-grid>
+      
+            <ion-item no-lines *ngIf="numOfExcersises == 0">
+   
+                    <ion-row>
+                            <button ion-button full round (click)="addExcersise()" >Add Row 1</button>
+                        </ion-row>
+
+                        <!-- <ion-row>
+                                <button ion-button full round (click)="addSet()" >Add Set</button>
+                            </ion-row> -->
+                  
+                </ion-item>
+        
+                <ion-item no-lines *ngIf="numOfExcersises == 1">
+   
+                        <ion-row>
+                                <button ion-button full round (click)="addExcersise()" >Add Row 2</button>
+                            </ion-row>
+                        </ion-item>
+
+                        <ion-item no-lines *ngIf="numOfExcersises == 2">
+   
+                                <ion-row>
+                                        <button ion-button full round (click)="addExcersise()" >Add Row 3</button>
+                                    </ion-row>
+                                </ion-item>
+      
+
+                    
+                      <ion-item no-lines>
+                            <button ion-button full round color="secondary" type="submit">Save Program</button>
+                          </ion-item>
+                         
+
+
+      </ion-list>
+    </form>   
+
+
+
+<!-- 
+    http://masteringionic.com/blog/2018-02-06-dynamically-add-and-remove-form-input-fields-with-ionic/ -->
+
+
+   
+                    
+
+      
+  </ion-content>
+
+  <ion-footer>
+     
+       
+                        
+  </ion-footer>
+
+  
+
+  <!-- <ion-footer color="danger">
+    <ion-toolbar tappable (click)="openMenu()" color="danger"> 
+      <ion-title>Show Action Sheet</ion-title>
+    </ion-toolbar>
+  </ion-footer> -->

@@ -1,0 +1,193 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/build/generated/res/resValues/debug/values/generated.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "157",
+                        "endColumns": "89",
+                        "endOffsets": "242"
+                    },
+                    "to": {
+                        "startLines": "88",
+                        "startColumns": "4",
+                        "startOffsets": "4904",
+                        "endColumns": "89",
+                        "endOffsets": "4989"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.1.0.aar/fb069aa38871525892efeb77ca113404/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "7434",
+                        "endColumns": "81",
+                        "endOffsets": "7511"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/firebase-crash-16.0.1.aar/c872321f5ebce18ede270e572076b35d/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "79",
+                        "startColumns": "4",
+                        "startOffsets": "4479",
+                        "endColumns": "52",
+                        "endOffsets": "4527"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e7e5efc85ab569687310343a4f21883c/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "13,16,18,85,128,130,131,136,138",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "951,1133,1262,4706,8677,8853,8975,9237,9432",
+                        "endColumns": "88,70,72,59,65,121,60,65,66",
+                        "endOffsets": "1035,1199,1330,4761,8738,8970,9031,9298,9494"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/ec8dd112a0348572c526cf7b21250655/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "86,99",
+                        "startColumns": "4,4",
+                        "startOffsets": "4766,6141",
+                        "endColumns": "67,166",
+                        "endOffsets": "4829,6303"
+                    }
+                },
+                {
+                    "source": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "89,90,110,111,112",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "4994,5058,7516,7599,7681",
+                        "endColumns": "63,42,82,81,58",
+                        "endOffsets": "5053,5096,7594,7676,7735"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/ffaaf7536a77afcb83edb96eff265cce/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,91,92,93,94,95,96,97,98,100,101,102,103,104,105,106,107,108",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "148,238,318,408,498,578,659,739,5101,5206,5387,5512,5619,5799,5922,6038,6308,6496,6601,6782,6907,7082,7230,7293,7355",
+                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
+                        "endOffsets": "233,313,403,493,573,654,734,814,5201,5382,5507,5614,5794,5917,6033,6136,6491,6596,6777,6902,7077,7225,7288,7350,7429"
+                    }
+                },
+                {
+                    "source": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/src/main/res/values/camera_theme.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "117",
+                        "startColumns": "4",
+                        "startOffsets": "8033",
+                        "endLines": "122",
+                        "endColumns": "10",
+                        "endOffsets": "8354"
+                    }
+                },
+                {
+                    "source": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/src/main/res/values/camera_ids.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "78",
+                        "startColumns": "4",
+                        "startOffsets": "4433",
+                        "endColumns": "45",
+                        "endOffsets": "4474"
+                    }
+                },
+                {
+                    "source": "/Users/user/Desktop/Website/Instaclone-market 3 copy 14/platforms/android/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,14,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "105,1040,1084",
+                        "endColumns": "42,43,48",
+                        "endOffsets": "143,1079,1128"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/76db5e80365d5680cf785ff5d9adbffa/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "11,12,17,19,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,80,81,82,83,84,87,113,123,124,129,132,137,139,140",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "819,888,1204,1335,2966,3036,3104,3176,3246,3307,3368,3429,3491,3555,3617,3678,3746,3846,3906,3972,4045,4114,4171,4223,4285,4357,4532,4567,4602,4636,4671,4834,7740,8359,8476,8743,9036,9303,9499,9571",
+                        "endLines": "11,12,17,19,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,80,81,82,83,84,87,113,123,127,129,135,137,139,140",
+                        "endColumns": "68,62,57,73,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
+                        "endOffsets": "883,946,1257,1404,3031,3099,3171,3241,3302,3363,3424,3486,3550,3612,3673,3741,3841,3901,3967,4040,4109,4166,4218,4280,4352,4428,4562,4597,4631,4666,4701,4899,7806,8471,8672,8848,9232,9427,9566,9633"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-16.0.1.aar/834fa49c108d9835024b45ff331b9e4b/res/values/values.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "114,115,116",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "7811,7881,7965",
+                        "endColumns": "69,83,67",
+                        "endOffsets": "7876,7960,8028"
+                    }
+                }
+            ]
+        }
+    ]
+}

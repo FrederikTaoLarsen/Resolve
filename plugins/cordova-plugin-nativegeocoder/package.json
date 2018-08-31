@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-nativegeocoder@^2.0.5",
+        "scope": null,
+        "escapedName": "cordova-plugin-nativegeocoder",
+        "name": "cordova-plugin-nativegeocoder",
+        "rawSpec": "^2.0.5",
+        "spec": ">=2.0.5 <3.0.0",
+        "type": "range"
+      },
+      "/Users/user/Desktop/Website/Instaclone-market 3"
+    ]
+  ],
+  "_from": "cordova-plugin-nativegeocoder@>=2.0.5 <3.0.0",
+  "_id": "cordova-plugin-nativegeocoder@2.0.5",
+  "_inCache": true,
+  "_location": "/cordova-plugin-nativegeocoder",
+  "_nodeVersion": "6.11.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-nativegeocoder-2.0.5.tgz_1516824581376_0.39081177208572626"
+  },
+  "_npmUser": {
+    "name": "sebastianbaar",
+    "email": "mail.sebastianbaar@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-nativegeocoder@^2.0.5",
+    "scope": null,
+    "escapedName": "cordova-plugin-nativegeocoder",
+    "name": "cordova-plugin-nativegeocoder",
+    "rawSpec": "^2.0.5",
+    "spec": ">=2.0.5 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-nativegeocoder/-/cordova-plugin-nativegeocoder-2.0.5.tgz",
+  "_shasum": "2f84a9ada448c8ac66071dfd356f1b05127d2aed",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-nativegeocoder@^2.0.5",
+  "_where": "/Users/user/Desktop/Website/Instaclone-market 3",
+  "author": {
+    "name": "Sebastian Baar"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastianbaar/cordova-plugin-nativegeocoder/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-nativegeocoder",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova plugin for native forward and reverse geocoding",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2f84a9ada448c8ac66071dfd356f1b05127d2aed",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-nativegeocoder/-/cordova-plugin-nativegeocoder-2.0.5.tgz"
+  },
+  "gitHead": "cf45425c8b0b64c379149e6b98be5eccfc8852f6",
+  "homepage": "https://github.com/sebastianbaar/cordova-plugin-nativegeocoder#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "sebastianbaar",
+      "email": "seb.baar@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-nativegeocoder",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianbaar/cordova-plugin-nativegeocoder.git"
+  },
+  "scripts": {},
+  "version": "2.0.5"
+}

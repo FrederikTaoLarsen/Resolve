@@ -1,0 +1,91 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-appcenter-crashes": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-camera-preview": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-code-push": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-googleplus": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-photo-library": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-zip": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    }
+  },
+  "dependent_plugins": {
+    "code-push": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-appcenter-shared": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.io.socialApp"
+    }
+  }
+}

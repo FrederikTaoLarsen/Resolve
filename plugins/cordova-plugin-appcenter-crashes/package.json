@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-appcenter-crashes",
+        "scope": null,
+        "escapedName": "cordova-plugin-appcenter-crashes",
+        "name": "cordova-plugin-appcenter-crashes",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/user/Desktop/Website/Instaclone-market 3"
+    ]
+  ],
+  "_from": "cordova-plugin-appcenter-crashes@latest",
+  "_id": "cordova-plugin-appcenter-crashes@0.1.5",
+  "_inCache": true,
+  "_location": "/cordova-plugin-appcenter-crashes",
+  "_nodeVersion": "8.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-appcenter-crashes_0.1.5_1527157279806_0.10151431123910704"
+  },
+  "_npmUser": {
+    "name": "max-mironov",
+    "email": "v-maximi@microsoft.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-appcenter-crashes",
+    "scope": null,
+    "escapedName": "cordova-plugin-appcenter-crashes",
+    "name": "cordova-plugin-appcenter-crashes",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-appcenter-crashes/-/cordova-plugin-appcenter-crashes-0.1.5.tgz",
+  "_shasum": "1010f38970f1c55850da6045ba244585bb88d768",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-appcenter-crashes",
+  "_where": "/Users/user/Desktop/Website/Instaclone-market 3",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/Microsoft/appcenter-sdk-cordova/issues"
+  },
+  "cordova": {
+    "id": "appcenter-crashes",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Provides Microsoft Azure App Center Crashes client for Cordova",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Mjeiys306lkXZDB4aTeEvaKHOfB/5VdbFi73ba9aG4MnhvDk6RtEKyQEWni8qFNr9ViYNQPLTlq/pHnTp1TlHg==",
+    "shasum": "1010f38970f1c55850da6045ba244585bb88d768",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-appcenter-crashes/-/cordova-plugin-appcenter-crashes-0.1.5.tgz",
+    "fileCount": 13,
+    "unpackedSize": 37279,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBpIgCRA9TVsSAnZWagAAErEP/iOSayID9KM0PxbcAxrR\nfXrBmp6MEP4bA/fyTG/Ep8a0Vmr+B14SP7/Ir+Q03rs7onJSrEwloODcBYWR\nMXZWMWUmFm+Fjwi15/jKCZ7gxMTePklwRbUYLDvWjspfBJJBpIadZVxkqS+J\nR2Nk7hWio8yAp+YoBKMcXxfZdPNfxLlchhgzQxd7Zz0iurddPg8tJOdBl7yI\nt8x+D/1B+ACX9IWCbFSfSMQfzbZz6LTBMCHDUJRqhWIvZjq6HX5tt9g3Ftf2\nzaECTEhl8NLAnDCT0jQR0ID08V/5I+yyO+XPejMx908CdlI9G3Fpkr+JaxXS\nGCcAxIqVsYikEOWdiXZSyX0mEBSaVNUp6gaDAyHXATllPGyusYKgu9mslTQd\ne7j+04DsWM7fxqLIth3j4SqRE81rBTXsWXCaolS8X0U2OcsKp9bBQqaqF9sw\nwYfrhErnpu43riP8xlIDfU6p31Krzfjp7tH1cO5w0tzQDCkifVG33OIakZsE\nktyT/CkGFhs9zEi2pzM5gSRNBvNlvpyu/+RzHjBI2nkq2reoNLTzPs6W6YAx\naYYRz+btAMgNgrWJpvADotIGj33gBsjzx8UpUi4+dHsem0l/kurHmumNcX0k\nQHHlosjvxsDRVtLRBbjnarY9RH5W9BkNLccWlLOPHMRE7uDy6XsKxdFTW0ou\nCecF\r\n=GDuV\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/Microsoft/appcenter-sdk-cordova/blob/master/README.md",
+  "keywords": [
+    "microsoft",
+    "azure",
+    "app center",
+    "crashes",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "izikl",
+      "email": "izikl@microsoft.com"
+    },
+    {
+      "name": "max-mironov",
+      "email": "v-maximi@microsoft.com"
+    },
+    {
+      "name": "pniko",
+      "email": "patrick.nikoletich@microsoft.com"
+    },
+    {
+      "name": "ruslan-bikkinin",
+      "email": "v-rubikk@microsoft.com"
+    },
+    {
+      "name": "sergey-akhalkov",
+      "email": "v-seakha@microsoft.com"
+    }
+  ],
+  "name": "cordova-plugin-appcenter-crashes",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/appcenter-sdk-cordova.git"
+  },
+  "version": "0.1.5"
+}

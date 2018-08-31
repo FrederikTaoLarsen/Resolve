@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="user">           
+    
+    <!-- Profile Menu -->
+    <ion-list>
+      <ion-item no-lines tappable (click)="setName()">
+        Set Profile Name
+        <ion-icon name="md-contact" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="setUsername()">
+        Set Username
+        <ion-icon name="md-at" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="setDescription()">
+        Set Description
+        <ion-icon name="md-clipboard" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="setPhoto()">
+        Set Profile Photo
+        <ion-icon name="ios-camera" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="setEmail()">
+        Change Email Address
+        <ion-icon name="md-mail-open" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="setPassword()" *ngIf="user && user.provider == 'Firebase'">
+        Change Password
+        <ion-icon name="md-key" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="deleteAccount()">
+        Delete Account
+        <ion-icon name="md-trash" item-right></ion-icon>
+      </ion-item>
+      <ion-item no-lines tappable (click)="logout()">
+        Logout
+        <ion-icon name="md-log-out" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

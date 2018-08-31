@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "292058966637",
+    "firebase_url": "https://resolve-104f6.firebaseio.com",
+    "project_id": "resolve-104f6",
+    "storage_bucket": "resolve-104f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292058966637:android:4ce5f6a38184c755",
+        "android_client_info": {
+          "package_name": "com.io.socialApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292058966637-v267ae6mqh6818tv8dfrnob0k7su2ore.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBstt7ih68cwu7J2m2B6ngbBIrUQqIdcQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

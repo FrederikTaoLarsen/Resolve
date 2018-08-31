@@ -1,0 +1,312 @@
+<!--
+  Generated template for the AddRoomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Explore Programs</ion-title>
+  </ion-navbar>
+
+  <ion-navbar >    
+      <ion-title >{{hash?search: 'Search'}}</ion-title>
+    </ion-navbar>
+    <ion-toolbar color="light">
+      <ion-searchbar [(ngModel)]="search"></ion-searchbar>
+    </ion-toolbar>
+
+</ion-header>
+
+  <ion-content cache-view="false">
+  <ion-segment [(ngModel)]="icons" color="primary">
+    <ion-segment-button value="post">
+      <ion-icon name="md-apps"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="people">
+      <ion-icon name="person"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="hashtag">
+      <i class="fa fa-hashtag"></i>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div #storiessearch id="storiessearch" padding=""></div>
+
+  <div [ngSwitch]="icons">
+
+    <ion-list>
+    <div *ngSwitchCase="'post'">
+        <div *ngIf="clickedP">
+            <ion-item  *ngFor="let program of programs | pname : search" col-12 class="col-image" (click)="programClick(program.key,program.pname,program.excersise1,program.reps1001,program.reps1002,program.reps1003,program.reps1004,program.reps1005,program.reps1006,program.reps1007,program.reps1008,program.reps1009,program.reps10010,program.weig2001,program.weig2002,program.weig2003,program.weig2004,program.weig2005,program.weig2006,program.weig2007,program.weig2008,program.weig2009,program.weig20010)" (click)="bookmarkProgram(program.key)" >
+
+                <p text-center>{{program.pname}}</p>
+                <button ion-button outline item-end icon-only clear (click)="bookmarkProgram(program.key)" [ngClass]="(isFavorite(program.key))?'favorite':''">
+                    <ion-icon name="md-bookmark"></ion-icon>
+                  </button>
+                
+               <!-- <ion-icon name="chatboxes" item-end (click)="joinRoom(program.key)"></ion-icon> -->
+
+                
+            </ion-item>
+          </div>
+          
+    </div>
+  </ion-list>
+
+    <div *ngSwitchCase="'people'">
+      <ion-list *ngIf="users" no-lines>
+        <ion-item *ngFor="let user of users | profilename : search" (click)="viewUser(user.userId)">
+          <ion-avatar item-left tappable>
+            <img src="{{user.avatar}}">
+          </ion-avatar>
+          <h2>{{user.name}}</h2>
+          <p>{{user.description}}</p>
+        </ion-item>
+      </ion-list>
+    </div>
+    <div *ngSwitchCase="'hashtag'">
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let photo of timelineData | hashtag : search" col-4 class="col-image" (press)="openOptions(photo.image)">
+
+              <img src={{photo.image}} (click)="viewPost(photo)">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- VALUES -->
+
+
+      <ion-list>
+        <!-- <div *ngIf="clickedP">
+        <ion-item *ngFor="let program of programs;  let i = index" (click)="programClick(program.key,program.pname)" >
+
+
+            <p text-center>{{program.pname}}</p>
+            <ion-icon name="chatboxes" item-end (click)="joinRoom(program.key)"></ion-icon
+                        
+
+                      </ion-item>
+                    </div> -->
+                    
+            
+
+                      <ion-list class= "master" *ngIf="!clickedP" >
+
+                          <ion-row>
+                              <ion-title >{{pname}} </ion-title>
+                            </ion-row>
+
+                        <ion-grid  no-lines class="scrolling-wrapper-flexbox"   >
+                      <!-- <ion-row >
+                      <p  text-center >{{programClicked}}</p>
+                    </ion-row>
+                    <ion-row >
+                      <p  text-center >{{pname}}</p>
+                    </ion-row>
+                    <ion-row >
+                        <p  text-center >{{excersise1}}</p>
+                      </ion-row> -->
+
+                      
+
+                      <ion-row class ="colorwhite" flex-wrap: nowrap>
+                      <ion-col  class ="damn" class="e"  > 
+                          <strong text-center  >EXCERSISES</strong>
+                  </ion-col>
+            
+                  <ion-col class ="damn"  class="c" no-padding    > 
+                        <strong  text-center >SET 1</strong>
+                </ion-col>
+              
+                <ion-col class ="damn" class="c"  no-padding     > 
+                        <strong text-center >SET 2</strong>
+                </ion-col>
+              
+                <ion-col class ="damn" class="c"  no-padding   > 
+                    <strong  text-center >SET 3</strong>
+              </ion-col>
+              
+              <ion-col class ="damn" class="c"  no-padding     > 
+                    <strong  text-center >SET 4</strong>
+              </ion-col>
+               
+              <ion-col  *ngIf="numOfSets>4" class ="damn" class="c" no-padding    > 
+                  <strong  text-center >SET 5</strong>
+              </ion-col>
+            </ion-row >
+
+                          
+            
+                          
+                  
+            
+            
+            
+                <ion-row  class ="colorwhite" flex-wrap: nowrap >
+                          
+                  <ion-col  class ="damn" class="e"    > 
+                          <strong  text-center  ></strong>
+                  </ion-col>
+            
+                  <ion-col class ="damn"  class="d" no-padding    > 
+                        <strong  text-center >reps</strong>
+                </ion-col>
+              
+                <ion-col class ="damn" class="d"  no-padding     > 
+                        <strong text-center >weight</strong>
+                </ion-col>
+              
+                <ion-col class ="damn"  class="d" no-padding    > 
+                  <strong  text-center >reps</strong>
+                </ion-col>
+            
+                <ion-col class ="damn" class="d"  no-padding     > 
+                  <strong text-center >weight</strong>
+                </ion-col>
+              
+                <ion-col class ="damn"  class="d" no-padding    > 
+                  <strong  text-center >reps</strong>
+                </ion-col>
+            
+                <ion-col class ="damn" class="d"  no-padding     > 
+                  <strong text-center >weight</strong>
+                </ion-col>
+            
+                <ion-col class ="damn"  class="d" no-padding    > 
+                  <strong  text-center >reps</strong>
+                </ion-col>
+            
+                <ion-col class ="damn" class="d"  no-padding     > 
+                  <strong text-center >weight</strong>
+                </ion-col>
+            
+                <ion-col *ngIf="numOfSets>4" class ="damn"  class="d" no-padding    > 
+                  <strong  text-center >reps</strong>
+                </ion-col>
+            
+                <ion-col *ngIf="numOfSets>4" class ="damn" class="d"  no-padding     > 
+                  <strong text-center >weight</strong>
+                </ion-col>
+                
+                </ion-row>
+
+                
+                <ion-row  flex-wrap: nowrap >
+              
+                    <ion-col class ="damn" class="a" > 
+                        <ion-item no-padding class= "sticky"  >
+                            <ion-item no-lines class= "sticky" text-center>{{excersise1}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{reps1}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{weig1}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{reps2}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{weig2}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{reps3}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{weig3}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{reps4}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{weig4}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{reps5}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+
+                    <ion-col class ="damn" class="b" > 
+                        <ion-item no-padding class= "lepos"  >
+                            <ion-item no-lines class= "lepos" text-center>{{weig5}}</ion-item>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+
+                </ion-grid> 
+             
+
+
+
+
+
+
+                      <ion-row >
+                          <button ion-button full round (click)="clickedPF()" >Back To List</button>
+                      </ion-row>
+
+                    
+                    </ion-list>
+
+
+
+
+
+                       
+                    
+                    
+              
+               
+
+
+          <!-- <button ion-button (click)="deleteProgram(program.key)">Delete!</button> -->
+          <!-- <button ion-button (click)="updateProgram(program.key)">Edit</button> -->
+          
+
+          
+
+        
+
+
+      </ion-list>
+
+     
+
+</ion-content>
